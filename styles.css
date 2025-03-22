@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #e3350d;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px 15px;
+  width: 70%;
+  border: 2px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  font-size: 1rem;
+  outline: none;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #3d7dca;
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #2a5a9c;
+}
+
+.pokemon-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .pokemon-card {
+    flex-direction: row;
+  }
+}
+
+.pokemon-image {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  min-height: 200px;
+}
+
+#sprite {
+  max-width: 100%;
+  height: auto;
+}
+
+.pokemon-info {
+  padding: 20px;
+  flex: 1;
+}
+
+#pokemon-name {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+#pokemon-id {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.types-container {
+  margin-bottom: 20px;
+}
+
+#types {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+#types span {
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Type colors */
+.NORMAL {
+  background-color: #a8a878;
+}
+.FIRE {
+  background-color: #f08030;
+}
+.WATER {
+  background-color: #6890f0;
+}
+.ELECTRIC {
+  background-color: #f8d030;
+}
+.GRASS {
+  background-color: #78c850;
+}
+.ICE {
+  background-color: #98d8d8;
+}
+.FIGHTING {
+  background-color: #c03028;
+}
+.POISON {
+  background-color: #a040a0;
+}
+.GROUND {
+  background-color: #e0c068;
+}
+.FLYING {
+  background-color: #a890f0;
+}
+.PSYCHIC {
+  background-color: #f85888;
+}
+.BUG {
+  background-color: #a8b820;
+}
+.ROCK {
+  background-color: #b8a038;
+}
+.GHOST {
+  background-color: #705898;
+}
+.DRAGON {
+  background-color: #7038f8;
+}
+.DARK {
+  background-color: #705848;
+}
+.STEEL {
+  background-color: #b8b8d0;
+}
+.FAIRY {
+  background-color: #ee99ac;
+}
+
+.stats h3 {
+  margin-bottom: 10px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stat-name {
+  width: 120px;
+  font-weight: bold;
+}
+
+.stat-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  width: 0%; /* This will be set by JavaScript */
+  transition: width 0.5s ease-in-out;
+}
+
+/* Stat bar colors */
+.hp {
+  background-color: #ff5959;
+}
+.attack {
+  background-color: #f5ac78;
+}
+.defense {
+  background-color: #fae078;
+}
+.special-attack {
+  background-color: #9db7f5;
+}
+.special-defense {
+  background-color: #a7db8d;
+}
+.speed {
+  background-color: #fa92b2;
+}
