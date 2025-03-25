@@ -71,8 +71,8 @@ function displayPokemonData(data) {
 
   pokemonId.textContent = `#${data.id}`;
 
-  weight.textContent = `Weight: ${data.weight}`;
-  height.textContent = `Height: ${data.height}`;
+  weight.textContent = `${data.weight}`;
+  height.textContent = `${data.height}`;
 
   types.innerHTML = "";
   data.types.forEach((typeInfo) => {
